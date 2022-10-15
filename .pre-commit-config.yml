@@ -5,3 +5,11 @@ repos:
     -   id: check-yaml
     -   id: end-of-file-fixer
     -   id: trailing-whitespace
+-   repo: local
+    hooks:
+        - id: pytest-check
+          name: PyTest Runner
+          entry: pytest
+          language: system
+          pass_filenames: false
+          always_run: true
