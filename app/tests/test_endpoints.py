@@ -45,7 +45,6 @@ def test_prediction_upload():
         else:
             assert response.status_code == 200
             data = response.json()
-            print(response.text)
             assert len(data.keys()) == 2
 
 
